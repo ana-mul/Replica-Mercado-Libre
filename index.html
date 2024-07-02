@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mercado Libre Argentina - Envíos Gratis en el día</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="div-superior">
+          <img src="images/logo.png" alt="logo-mercado-libre" class="logo-ml" />
+          <form action="">
+            <input
+              type="text"
+              placeholder="Buscar productos, marcas y más..."
+              class="barra-busqueda"
+            />
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <i class="fa-solid fa-tag"></i>
+          <p class="p-offert">Ofertas por tiempo limitado</p>
+        </div>
+        <div class="div-inferior">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="div-envios">
+            <p class="p-one">Enviar a Ana</p>
+            <p class="p-two">Rivadavia 2725</p>
+          </div>
+          <div class="div-categorias">
+            <ul class="ul-categorias">
+              <li class="li-categorias">
+                Categorías
+                <ul class="ul-anidado-cat" id="ul-categorias">
+                  <li class="li-anidado-cat">Vehículos</li>
+                  <li class="li-anidado-cat">Inmuebles</li>
+                  <li class="li-anidado-cat">Supermercados</li>
+                  <li class="li-anidado-cat">Tecnología</li>
+                  <li class="li-anidado-cat">Hogar y Muebles</li>
+                  <li class="li-anidado-cat">Electrodomésticos</li>
+                  <li class="li-anidado-cat">Herramientas</li>
+                  <li class="li-anidado-cat">Construcción</li>
+                  <li class="li-anidado-cat">Deportes y Fitness</li>
+                  <li class="li-anidado-cat">Accesorios para Vehículos</li>
+                  <li class="li-anidado-cat">Moda</li>
+                  <li class="li-anidado-cat">Juegos y juguetes</li>
+                  <li class="li-anidado-cat">Ver más</li>
+                </ul>
+                <button class="btn-categorias" id="btn-categorias">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li class="li-categorias">Ofertas</li>
+              <li class="li-categorias">Historial</li>
+              <li class="li-categorias">Supermercados</li>
+              <li class="li-categorias">Moda</li>
+              <li class="li-categorias">Mercado Play</li>
+              <li class="li-categorias">Vender</li>
+              <li class="li-categorias">Ayuda</li>
+            </ul>
+            <span class="span-gratis">GRATIS</span>
+          </div>
+          <div class="div-usuario">
+            <ul class="ul-usuario">
+              <li class="li-usuario">
+                Ana
+                <ul class="ul-anidado-user" id="ul-usuario">
+                  <div class="div-anidado-user div-perfil">
+                    <img
+                      src="images/images-removebg-preview.png"
+                      alt="user"
+                      class="user-img"
+                    />
+                    <li class="li-anidado-user li-perfil">Mi Perfil</li>
+                  </div>
+                  <div class="div-anidado-user">
+                    <li class="li-anidado-user">Compras</li>
+                    <li class="li-anidado-user">Preguntas</li>
+                    <li class="li-anidado-user">Opiniones</li>
+                  </div>
+                  <div class="div-anidado-user">
+                    <li class="li-anidado-user">Cupones</li>
+                    <li class="li-anidado-user">Préstamos</li>
+                    <li class="li-anidado-user">Suscripciones</li>
+                    <li class="li-anidado-user">Vender</li>
+                  </div>
+                  <div class="div-anidado-user">
+                    <li class="li-anidado-user">Mercado Shops</li>
+                    <li class="li-anidado-user">Facturación</li>
+                  </div>
+                  <div class="div-salir">
+                    <li class="li-anidado-user">Salir</li>
+                  </div>
+                </ul>
+                <button class="btn-usuario" id="btn-usuario">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li class="li-compras">Mis Compras</li>
+              <li class="li-favoritos">
+                Favoritos
+                <ul class="ul-favoritos" id="ul-favoritos">
+                  <li class="li-fav li-fav-tit">Favoritos</li>
+                  <div class="div-fav">
+                    <li class="li-fav li-fav-des">
+                      Agregá acá los productos que te gustaron para poder verlos
+                      más tarde.
+                    </li>
+                  </div>
+                </ul>
+                <button class="btn-fav" id="btn-fav">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <span class="span-i"
+                ><i class="fa-regular fa-bell"> </i
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
