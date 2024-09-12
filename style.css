@@ -152,6 +152,7 @@ ul {
 
 /* MENU OCULTO */
 .ul-anidado-cat {
+  position: absolute;
   border-radius: 5px;
   background-color: rgb(66, 65, 65);
   color: white;
@@ -159,12 +160,16 @@ ul {
   padding: 25px 70px 25px 25px;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
+
 .li-anidado-cat {
   margin-bottom: 10px;
 }
 
 .ul-anidado-user {
+  position: absolute;
+  right:60px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -175,6 +180,7 @@ ul {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 .li-anidado-user {
   margin-bottom: 15px;
@@ -203,6 +209,8 @@ ul {
   margin-top: 15px;
 }
 .ul-favoritos {
+  position: absolute;
+  right: 75px;
   border-radius: 1px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -212,6 +220,7 @@ ul {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 .li-fav-tit {
   padding: 10px;
@@ -235,6 +244,7 @@ ul {
   width: 100%;
   max-width: 1280px;
   height: 330px;
+  z-index: 1;
 }
 .hero-content {
   position: absolute;

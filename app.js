@@ -29,14 +29,15 @@ const slide = () => {
             img.parentElement.classList.add("active"); // Si es igual, se añade active al index que corresponde 
         }
     });
-    index = (index + 1) % images.length;
+    index = (index + 1) % images.length; // buscamos el resto de la division entre index+1 y la cantidad de imagenes, asi  al llegar a 0 vuelve a empezar
 };
 
 document.addEventListener("DOMContentLoaded", () => {
     slide(); // Mostrar la primera imagen inmediatamente
-    setInterval(slide, 3000); // Iniciar el slider
-});
+    setInterval(slide, 3000); //para que las imagenes se muevan solas cada 3''
+}); 
 
 
-document.getElementById("arrow-left").addEventListener("click", slide);
-document.getElementById("arrow-right").addEventListener("click", slide);
+document.getElementById("arrow-left").addEventListener("click", slide); //click izquierdo para cambiar imagen
+document.getElementById("arrow-right").addEventListener("click", slide); //click derecho para cambiar imagen
+
