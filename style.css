@@ -26,6 +26,7 @@ nav {
   height: auto;
   position: relative;
   bottom: 20px;
+  cursor: pointer;
 }
 form {
   position: relative;
@@ -52,11 +53,13 @@ form {
   bottom: 42px;
   color: rgb(199, 199, 199);
   font-size: 15px;
+  cursor: pointer;
 }
 .p-offert {
   font-size: 16px;
   position: relative;
   top: 10px;
+  cursor: pointer;
 }
 .fa-tag {
   font-size: 23px;
@@ -71,6 +74,7 @@ form {
   padding: 0px 80px;
   position: relative;
   bottom: 30px;
+  cursor: pointer;
 }
 .div-categorias,
 .div-usuario {
@@ -153,6 +157,7 @@ ul {
 /* MENU OCULTO */
 .ul-anidado-cat {
   position: absolute;
+  display: none;
   border-radius: 5px;
   background-color: rgb(66, 65, 65);
   color: white;
@@ -169,7 +174,8 @@ ul {
 
 .ul-anidado-user {
   position: absolute;
-  right:60px;
+  display: none;
+  right:3px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -182,6 +188,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
+
 .li-anidado-user {
   margin-bottom: 15px;
 }
@@ -210,7 +217,8 @@ ul {
 }
 .ul-favoritos {
   position: absolute;
-  right: 75px;
+  display: none;
+  right: 5px;
   border-radius: 1px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -233,6 +241,14 @@ ul {
   background-color: rgba(199, 199, 199, 0.308);
   padding: 50px;
 }
+/*HOVER MENU DESPLEGABLE*/
+.li-categorias, .li-usuario, .li-favoritos{
+  position: relative;
+}
+.li-categorias:hover .ul-anidado-cat, .li-usuario:hover .ul-anidado-user, .li-favoritos:hover .ul-favoritos{
+  display: block;
+}
+
 
 /* HERO CONTENT */
 .hero {
@@ -245,6 +261,7 @@ ul {
   max-width: 1280px;
   height: 330px;
   z-index: 1;
+  cursor: pointer;
 }
 .hero-content {
   position: absolute;
@@ -277,6 +294,7 @@ ul {
   background-color: white;
   width: 70px;
   height: 60px;
+  cursor: pointer;
 }
 .arrow-left {
   left: 0px;
