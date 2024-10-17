@@ -41,3 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("arrow-left").addEventListener("click", slide); //click izquierdo para cambiar imagen
 document.getElementById("arrow-right").addEventListener("click", slide); //click derecho para cambiar imagen
 
+//SLIDE SECTION CARDS
