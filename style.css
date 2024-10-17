@@ -70,7 +70,7 @@ form {
 .fa-tag {
   font-size: 23px;
   position: relative;
-  left: 60px;
+  left: 50px;
   top: 14px;
   background-color: var(--background-one);
 }
@@ -138,19 +138,23 @@ ul {
 }
 .p-two {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   background-color: var(--background-one);
 }
 .fa-location-dot {
   font-size: 25px;
   position: relative;
-  right: 60px;
+  right: 65px;
   background-color: var(--background-one);
 }
 .span-i {
   display: flex;
   gap: 20px;
   font-size: 18px;
+  background-color: var(--background-one);
+}
+.fa-bell, .fa-cart-shopping{
+  background-color:var(--background-one);
 }
 .btn-usuario,
 .btn-categorias,
@@ -211,6 +215,9 @@ ul {
 
 .li-anidado-user {
   margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.div-anidado-user{
   background-color: rgb(255, 255, 255);
 }
 .user-img {
@@ -329,9 +336,10 @@ ul {
   right: 0px;
   border-top-left-radius: 55px;
   border-bottom-left-radius: 55px;
+}
+.fa-chevron-left, .fa-chevron-right{
   background-color: white;
 }
-
 
 /*CARDS*/
 .cards{
@@ -340,6 +348,7 @@ ul {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   text-align: center;
   justify-content: flex-start;
   gap:7px;
@@ -363,6 +372,7 @@ ul {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: white;
+  cursor: pointer;
 }
 .product-title{
   font-size: 13px;
@@ -377,6 +387,10 @@ ul {
   text-align: left;
   padding: 14px 5px;
   background-color: white;
+
+}
+.product-description:hover{
+  color:rgb(52,131,250);
 }
 .product-price{
   font-size: 15px;
@@ -403,4 +417,32 @@ ul {
   padding: 2px 10px;
   font-size: 10px;
 }
+.btn-mdp:hover{
+  background-color: rgb(194, 203, 215);
+}
+.ar-right, .ar-left{
+  border:none;
+  border-radius: 50%;
+  padding: 30px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  color:rgb(52,131,250);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
 
+.ar-left {
+  position: absolute;
+  left: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.ar-right {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
