@@ -77,13 +77,16 @@ form {
 /* CONTENEDOR INFERIOR */
 .div-inferior {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 80px;
+  justify-content: column;
+  padding: 0px 0px 0px 80px;
   position: relative;
-  bottom: 30px;
+  bottom: 30px; 
   cursor: pointer;
   background-color: var(--background-one);
 }
+/* .div-inferior:hover{
+  border: 1px solid rgba(199, 199, 199, 0.69);
+} */
 .div-categorias,
 .div-usuario {
   font-weight: 400;
@@ -98,6 +101,9 @@ form {
 }
 .li-categorias {
   background-color: var(--background-one);
+}
+.li-categorias:hover{
+  color:rgb(51, 51, 51)
 }
 ul {
   list-style: none;
@@ -128,8 +134,27 @@ ul {
   background-color: var(--background-one);
 }
 .div-envios {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  right: 60px;
+  right: 60px; 
+  background-color: var(--background-one);
+}
+.div-envios-b{
+  background-color: var(--background-one);
+}
+.div-envios-a{
+  background-color: var(--background-one);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+.div-envios:hover{
+  border: 1px solid rgba(115, 115, 115, 0.245);
+  border-radius: 3px;
+  padding:3px 5px;
 }
 .p-one {
   font-weight: 200;
@@ -142,9 +167,7 @@ ul {
   background-color: var(--background-one);
 }
 .fa-location-dot {
-  font-size: 25px;
-  position: relative;
-  right: 65px;
+  font-size: 20px;
   background-color: var(--background-one);
 }
 .span-i {
@@ -180,6 +203,7 @@ ul {
 .li-favoritos {
   background-color: var(--background-one);
 }
+
 /* MENU OCULTO */
 .ul-anidado-cat {
   position: absolute;
@@ -520,9 +544,17 @@ p {
   padding: 10px;
   margin: 6px;
 }
-.first-img {
+.cards-cc .first-img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.cards-cc .h2-hover:hover ~ .first-img {
+  transform: scale(1.05); /* Ajusta el efecto de hover que deseas */
+}
+.first-img:hover{
+  transform: scale(1.05);
 }
 .row-img {
   display: flex;
@@ -538,6 +570,9 @@ p {
   background-color: white;
   border: 3px solid rgb(227, 226, 226);
   border-radius: 5px;
+}
+.row-img img:hover{
+  border: 3px solid  rgb(13, 108, 252);
 }
 
 /* SECTION BANNER */
@@ -585,6 +620,9 @@ p {
   text-align: left;
   margin: 3px;
   cursor: pointer;
+}
+.beneficios-a h3:hover{
+  color: rgb(13, 108, 252);
 }
 .beneficios-b {
   display: flex;
@@ -641,6 +679,9 @@ p {
   text-transform: capitalize;
   padding: 10px 50px;
 }
+.offerts-b h3:hover{
+  background-color: rgb(13, 108, 252);
+}
 .offerts-a img {
   width: 50%;
   height: cover;
@@ -659,7 +700,7 @@ p {
 .publicity-a {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
   align-items: center;
   justify-content: center;
   width: 33%;
@@ -692,7 +733,9 @@ p {
   background-color: white;
   cursor: pointer;
 }
-
+.publicity-a h3:hover{
+  color: rgb(13, 108, 252);
+}
 .line-divisor {
   width: 1px;
   height: 80px;
